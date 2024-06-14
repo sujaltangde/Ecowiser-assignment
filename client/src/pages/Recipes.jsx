@@ -83,8 +83,9 @@ export const Recipes = () => {
               <div className="text-gray-600 text-sm mt-2 md:flex hidden">{recipe.description.substring(0, 200)}...</div>
               <div className="text-gray-600 text-sm mt-2 md:hidden flex">{recipe.description.substring(0, 80)}...</div>
               <div className="flex items-center justify-between mt-2">
-                <div className="text-gray-500 text-sm">{new Date(recipe.createdAt).toLocaleString()}</div>
-                <div className="text-gray-500 text-sm">Posted by {recipe.createdBy.username}</div>
+                <div className="text-gray-500 md:text-sm text-xs">
+                  {new Date(recipe.createdAt).toLocaleString()}</div>
+                <div className="text-gray-500 md:text-sm text-xs">Posted by {recipe.createdBy.username}</div>
               </div>
              </div>
 

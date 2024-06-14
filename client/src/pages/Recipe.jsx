@@ -16,7 +16,7 @@ export const Recipe = () => {
   }, [dispatch, params.recipeId]);
 
   return (
-    <div className="bg-white min-h-screen flex flex-col items-center pt-20 pb-20 md:px-14 px-10">
+    <div className="bg-white min-h-screen flex flex-col items-center pt-20 pb-20 md:px-14 px-3">
       {loading ? (
         <div className="mt-10"><Loader/></div>
       ) : (
@@ -42,8 +42,8 @@ export const Recipe = () => {
               </ol>
             </div>
             <div className="flex items-center justify-between mt-4">
-              <div className="text-gray-500">{new Date(recipe.createdAt).toLocaleString()}</div>
-              <div className="text-gray-500">Posted by {recipe.createdBy && recipe.createdBy.username}</div>
+              <div className="text-gray-500 md:text-sm text-xs">{new Date(recipe.createdAt).toLocaleString()}</div>
+              <div className="text-gray-500 md:text-sm text-xs">Posted by {recipe.createdBy && recipe.createdBy.username}</div>
             </div>
             <button
               onClick={() => navigate(-1)}
