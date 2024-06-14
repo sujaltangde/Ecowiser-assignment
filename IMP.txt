@@ -1,0 +1,28 @@
+
+
+
+Production: https://7up-7down.vercel.app/
+
+
+
+Demo video: https://drive.google.com/file/d/1DJf_0aHId6cv3AwUKU7P9pr6S_I2kI5O/view
+
+
+
+
+API: https://master-o-assignment-backend.onrender.com
+
+
+In case you are running it on development mode then add the config.env file before starting the server, the environment variables will be
+
+
+config.env
+----------------------------------------------------
+
+----------------------------------------------------
+
+Put the above data in config.env file and paste that file in 
+server > config > config.env
+
+
+
