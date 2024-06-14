@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router';
 import { useNavigate, Link } from 'react-router-dom';
 import { getRecipe } from '../actions/recipeActions';
+import { Loader } from '../components/Loader';
 
 export const Recipe = () => {
   const { loading, recipe } = useSelector(state => state.recipe);
@@ -17,7 +18,7 @@ export const Recipe = () => {
   return (
     <div className="bg-white min-h-screen flex flex-col items-center pt-20 pb-20 md:px-14 px-10">
       {loading ? (
-        <div className="text-center text-gray-600 font-semibold">Loading...</div>
+        <div className="mt-10"><Loader/></div>
       ) : (
         <div className="max-w-2xl w-full space-y-6">
           <div className="bg-gray-100 rounded-lg p-6 shadow-md">
