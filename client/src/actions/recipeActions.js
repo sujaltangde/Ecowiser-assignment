@@ -19,9 +19,9 @@ export const getAllRecipes = () => async (dispatch) => {
             }
         }
 
-        const { data } = await axios.get("http://172.17.55.145:5000/api/recipe/get-all-recipes/", config);
+        const { data } = await axios.get("https://meal-matrix-backend.onrender.com/api/recipe/get-all-recipes/", config);
 
-        console.log("data",data)
+        // console.log("data",data)
 
         dispatch(getAllRecipesSuccess(data.recipes))
 
@@ -39,7 +39,7 @@ export const getUsersRecipes = () => async (dispatch) => {
             }
         }
 
-        const { data } = await axios.get("http://172.17.55.145:5000/api/recipe/get-recipes-of-user/", config);
+        const { data } = await axios.get("https://meal-matrix-backend.onrender.com/api/recipe/get-recipes-of-user/", config);
 
         dispatch(getUserRecipesSuccess(data.recipes))
 
@@ -57,7 +57,7 @@ export const getRecipe = (id) => async (dispatch) => {
             }
         }
 
-        const { data } = await axios.get("http://172.17.55.145:5000/api/recipe/get-recipe/" + id, config);
+        const { data } = await axios.get("https://meal-matrix-backend.onrender.com/api/recipe/get-recipe/" + id, config);
 
         dispatch(getRecipeSuccess(data.recipe))
 
@@ -75,7 +75,7 @@ export const addRecipe = (resetData,recipeData) => async (dispatch) => {
             }
         }
 
-        const { data } = await axios.post("http://172.17.55.145:5000/api/recipe/add-recipe/", recipeData, config);
+        const { data } = await axios.post("https://meal-matrix-backend.onrender.com/api/recipe/add-recipe/", recipeData, config);
 
         dispatch(addRecipeSuccess())
 
@@ -99,7 +99,7 @@ export const updateRecipe = (id,recipeData) => async (dispatch) => {
             }
         }
 
-        const { data } = await axios.put("http://172.17.55.145:5000/api/recipe/update-recipe/"+id, recipeData, config);
+        const { data } = await axios.put("https://meal-matrix-backend.onrender.com/api/recipe/update-recipe/"+id, recipeData, config);
 
         dispatch(updateRecipeSuccess())
 
@@ -120,7 +120,7 @@ export const deleteRecipe = (id) => async (dispatch) => {
             }
         }
 
-        const { data } = await axios.delete("http://172.17.55.145:5000/api/recipe/delete-recipe/"+id, config);
+        const { data } = await axios.delete("https://meal-matrix-backend.onrender.com/api/recipe/delete-recipe/"+id, config);
 
         dispatch(deleteRecipeSuccess())
 

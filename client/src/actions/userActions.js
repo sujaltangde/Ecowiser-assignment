@@ -16,7 +16,7 @@ export const loginUser = (userData) => async (dispatch) => {
         dispatch(loginRequest())
 
 
-        const { data } = await axios.post(`http://172.17.55.145:5000/api/auth/login`, userData)
+        const { data } = await axios.post(`https://meal-matrix-backend.onrender.com/api/auth/login`, userData)
 
         dispatch(loginSuccess())
       
@@ -33,7 +33,7 @@ export const registerUser = (userData) => async (dispatch) => {
         dispatch(registerRequest())
 
 
-        const { data } = await axios.post(`http://172.17.55.145:5000/api/auth/register`, userData)
+        const { data } = await axios.post(`https://meal-matrix-backend.onrender.com/api/auth/register`, userData)
 
         dispatch(registerSuccess())
         localStorage.setItem('accesstoken', data.token)
@@ -58,7 +58,7 @@ export const IsLogin = () => async (dispatch) => {
             }
         }
         
-        const { data } = await axios.get(`http://172.17.55.145:5000/api/auth/verify`, config)
+        const { data } = await axios.get(`https://meal-matrix-backend.onrender.com/api/auth/verify`, config)
         
         // console.log("data", data )
 
@@ -83,7 +83,7 @@ export const getUser = () => async (dispatch) => {
             }
         }
 
-        const { data } = await axios.get(`http://172.17.55.145:5000/api/user`, config);
+        const { data } = await axios.get(`https://meal-matrix-backend.onrender.com/api/user`, config);
 
         dispatch(getUserSuccess(data.user))
 

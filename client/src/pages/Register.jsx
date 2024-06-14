@@ -30,7 +30,7 @@ export const Register = () => {
 
     };
 
-    console.log(data);
+    // console.log(data);
 
     dispatch(registerUser(data));
   };

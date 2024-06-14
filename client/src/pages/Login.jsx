@@ -28,7 +28,7 @@ export const Login = () => {
       googleLogin: false,
     };
 
-    console.log(data);
+    // console.log(data);
 
     dispatch(loginUser(data));
   };
