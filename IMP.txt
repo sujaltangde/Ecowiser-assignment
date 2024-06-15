@@ -7,7 +7,7 @@ Production: https://mealmatrix.vercel.app/
 Notes: https://docs.google.com/document/d/1TWpj_vqik7H0ILWgo868jlEiSi8uoXf06AThOQzUcIY/edit
 
 
-Demo video: 
+Demo video: https://drive.google.com/file/d/1f9o3ZQpQCHIgMs6Go7chy8nWaU4oTgKH/view
 
 
 
