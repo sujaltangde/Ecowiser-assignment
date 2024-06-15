@@ -1,5 +1,8 @@
 # Ecowiser Full Stack Developer Assignment
 
+**Hosted Application**: https://mealmatrix.vercel.app/
+
+
 ## Getting Started
 
 To get started with the assignment project, follow these steps:
@@ -51,5 +54,7 @@ To get started with the assignment project, follow these steps:
 - **Frontend**: React.js, Redux, Axios, Material UI, Tailwind CSS
 - **Backend**: Node.js, Express.js, Json Web Token(JWT)
 - **Database**: MongoDB 
+
+  **Deployment**: Vercel for frontend and Render for backend
 
 Note: The database used in this project is hosted.

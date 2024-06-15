@@ -1,16 +1,18 @@
 
 
 
-Production: https://7up-7down.vercel.app/
+Production: https://mealmatrix.vercel.app/
+
+
+Notes: https://docs.google.com/document/d/1TWpj_vqik7H0ILWgo868jlEiSi8uoXf06AThOQzUcIY/edit
+
+
+Demo video: 
 
 
 
-Demo video: https://drive.google.com/file/d/1DJf_0aHId6cv3AwUKU7P9pr6S_I2kI5O/view
 
-
-
-
-API: https://master-o-assignment-backend.onrender.com
+API: https://meal-matrix-backend.onrender.com
 
 
 In case you are running it on development mode then add the config.env file before starting the server, the environment variables will be
@@ -19,10 +21,29 @@ In case you are running it on development mode then add the config.env file befo
 config.env
 ----------------------------------------------------
 
+
+DB=mongodb+srv://sujaltagade01:T2QxP7nWlSVJp0e8@cluster0.aikijak.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+PORT=5000
+
+SECRET=aobsabnjkkcjsbckjsdbvkcbvck
+
+
+CLOUDINARY_API_KEY=834366412839724
+CLOUDINARY_API_SECRET=maXxNTggT9teghy9t-tSiwkgWU8
+CLOUDINARY_NAME=dtsoqd1wr
+
+
+
+
+
 ----------------------------------------------------
 
 Put the above data in config.env file and paste that file in 
 server > config > config.env
+
+
+I know that we don't need to make env file exposed, but I am doing this for assignment purpose 
 
 
 

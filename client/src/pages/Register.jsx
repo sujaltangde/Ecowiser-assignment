@@ -102,7 +102,7 @@ export const Register = () => {
                 </button>
               ) : (
                 <button
-                  type="submit"
+                  disabled={true}
                   className="w-full font-semibold flex justify-center items-center bg-orange-600 py-1.5 rounded text-white"
                 >
                   <span className="animate-spin"><TbLoader2 size={25} /></span>
