@@ -1,4 +1,3 @@
-# Ecowiser Full Stack Developer Assignment
 
 **Hosted Application**: https://mealmatrix.vercel.app/
 
