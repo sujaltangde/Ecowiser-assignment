@@ -14,7 +14,7 @@ To get started with the assignment project, follow these steps:
 
 1. Clone the repository to your local machine:
     ```bash
-    git clone https://github.com/sujaltangde/Ecowiser-assignment.git
+    git clone https://github.com/sujaltangde/Mealmatrix.git
     ```
 
 2. Change into the frontend directory:
